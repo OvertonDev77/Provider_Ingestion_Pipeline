@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+- This project fetches provider data from the NPI Registry API using async requests and stores it in a Supabase Postgres database.
+- The workflow includes: async API requests (with rate limiting and retries), parsing and mapping results, and upserting into the NPIRehabs table.
+- The system can be triggered via command line or a FastAPI endpoint (/run-npi-workflow).
+- Docker is used for environment consistency and data persistence.
+- All database operations use upsert logic to avoid duplicates.
+

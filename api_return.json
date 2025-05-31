@@ -1,0 +1,703 @@
+{
+  "result_count": 10,
+  "results": [
+    {
+      "created_epoch": "1662494950000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1708983290000",
+      "number": "1811618184",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "9400 ENCINO AVE",
+          "city": "NORTHRIDGE",
+          "state": "CA",
+          "postal_code": "913252416",
+          "telephone_number": "818-568-6446"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "626 W COLORADO ST",
+          "city": "GLENDALE",
+          "state": "CA",
+          "postal_code": "912041104"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "organization_name": "1 LIFE RECOVERY CENTERS",
+        "organizational_subpart": "NO",
+        "enumeration_date": "2022-09-06",
+        "last_updated": "2024-02-26",
+        "certification_date": "2024-02-26",
+        "status": "A",
+        "authorized_official_first_name": "SONA",
+        "authorized_official_last_name": "TOPALIAN",
+        "authorized_official_telephone_number": "8185686446",
+        "authorized_official_title_or_position": "Program Director",
+        "authorized_official_credential": "LMFT"
+      },
+      "taxonomies": [
+        {
+          "code": "261QR0405X",
+          "taxonomy_group": "",
+          "desc": "Clinic/Center, Rehabilitation, Substance Use Disorder",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "324500000X",
+          "taxonomy_group": "",
+          "desc": "Substance Abuse Rehabilitation Facility",
+          "state": null,
+          "license": null,
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1699372750000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1731541277000",
+      "number": "1417720848",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "10254 BANNOCKBURN DR",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "postal_code": "900644707",
+          "telephone_number": "424-421-6610",
+          "fax_number": "213-334-4100"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "10254 BANNOCKBURN DR",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "postal_code": "900644707",
+          "telephone_number": "424-421-6610",
+          "fax_number": "213-334-4100"
+        }
+      ],
+      "practiceLocations": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "3142 PATRICIA AVE",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "postal_code": "900644718",
+          "telephone_number": "424-421-6610",
+          "fax_number": "213-334-4100"
+        }
+      ],
+      "basic": {
+        "organization_name": "1 METHOD CORP",
+        "organizational_subpart": "NO",
+        "enumeration_date": "2023-11-07",
+        "last_updated": "2024-11-13",
+        "certification_date": "2024-11-13",
+        "status": "A",
+        "authorized_official_first_name": "DARCY",
+        "authorized_official_last_name": "JOHNSTON",
+        "authorized_official_telephone_number": "4244216609",
+        "authorized_official_title_or_position": "Director of Revenue Cycle Managment"
+      },
+      "taxonomies": [
+        {
+          "code": "324500000X",
+          "taxonomy_group": "",
+          "desc": "Substance Abuse Rehabilitation Facility",
+          "state": null,
+          "license": null,
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1699373674000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1731540993000",
+      "number": "1295509628",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "10254 BANNOCKBURN DR",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "postal_code": "900644707",
+          "telephone_number": "424-421-6610",
+          "fax_number": "213-334-4100"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "2210 SELBY AVE",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "postal_code": "900642028",
+          "telephone_number": "424-421-6610",
+          "fax_number": "213-334-4100"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "organization_name": "1 METHOD CORP",
+        "organizational_subpart": "NO",
+        "enumeration_date": "2023-11-07",
+        "last_updated": "2024-11-13",
+        "certification_date": "2024-11-13",
+        "status": "A",
+        "authorized_official_first_name": "DARCY",
+        "authorized_official_last_name": "JOHNSTON",
+        "authorized_official_telephone_number": "4244216609",
+        "authorized_official_title_or_position": "Director of Revenue Cycle Mgmnt"
+      },
+      "taxonomies": [
+        {
+          "code": "324500000X",
+          "taxonomy_group": "",
+          "desc": "Substance Abuse Rehabilitation Facility",
+          "state": null,
+          "license": null,
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1699381061000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1731541466000",
+      "number": "1619741071",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "10127 ROSSBURY PL",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "postal_code": "900644827",
+          "telephone_number": "424-421-6610",
+          "fax_number": "213-334-4100"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "10254 BANNOCKBURN DR",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "postal_code": "900644707",
+          "telephone_number": "424-421-6610",
+          "fax_number": "213-334-4100"
+        }
+      ],
+      "practiceLocations": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "2210 SELBY AVE",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "postal_code": "900642028",
+          "telephone_number": "424-421-6610",
+          "fax_number": "213-334-4100"
+        }
+      ],
+      "basic": {
+        "organization_name": "1 METHOD CORP",
+        "organizational_subpart": "NO",
+        "enumeration_date": "2023-11-07",
+        "last_updated": "2024-11-13",
+        "certification_date": "2024-11-13",
+        "status": "A",
+        "authorized_official_first_name": "DARCY",
+        "authorized_official_last_name": "JOHNSTON",
+        "authorized_official_telephone_number": "4244216609",
+        "authorized_official_title_or_position": "Director of Revenue Cycle Mgmnt"
+      },
+      "taxonomies": [
+        {
+          "code": "324500000X",
+          "taxonomy_group": "",
+          "desc": "Substance Abuse Rehabilitation Facility",
+          "state": null,
+          "license": null,
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1421562882000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1421562882000",
+      "number": "1881083566",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "10254 BANNOCKBURN DR",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "postal_code": "900644707",
+          "telephone_number": "310-729-1946"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "10254 BANNOCKBURN DR",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "postal_code": "900644707",
+          "telephone_number": "310-729-1946"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "organization_name": "1 METHOD, LLC",
+        "organizational_subpart": "NO",
+        "enumeration_date": "2015-01-18",
+        "last_updated": "2015-01-18",
+        "status": "A",
+        "authorized_official_first_name": "CASSIDY",
+        "authorized_official_last_name": "COUSENS",
+        "authorized_official_telephone_number": "3107291946",
+        "authorized_official_title_or_position": "Program Administrator",
+        "authorized_official_name_prefix": "Mr.",
+        "authorized_official_name_suffix": "--",
+        "authorized_official_credential": "CCDC"
+      },
+      "taxonomies": [
+        {
+          "code": "324500000X",
+          "taxonomy_group": "",
+          "desc": "Substance Abuse Rehabilitation Facility",
+          "state": "CA",
+          "license": null,
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": [
+        {
+          "organization_name": "METHOD RECOVERY",
+          "type": "Doing Business As",
+          "code": "3"
+        }
+      ]
+    },
+    {
+      "created_epoch": "1694030961000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1729182588000",
+      "number": "1508642463",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "14831 NORTHRIDGE LN",
+          "city": "HUNTINGTON BEACH",
+          "state": "CA",
+          "postal_code": "926472314",
+          "telephone_number": "917-971-1727"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "1800 OLD OKEECHOBEE ROAD",
+          "address_2": "STE 200",
+          "city": "WEST PALM BEACH",
+          "state": "FL",
+          "postal_code": "334096367",
+          "telephone_number": "609-706-7242"
+        }
+      ],
+      "practiceLocations": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "15031 ETON CIR",
+          "city": "HUNTINGTON BEACH",
+          "state": "CA",
+          "postal_code": "926472623",
+          "telephone_number": "609-706-7242"
+        }
+      ],
+      "basic": {
+        "organization_name": "1 SOLUTION WELLNESS LLC",
+        "organizational_subpart": "NO",
+        "enumeration_date": "2023-09-06",
+        "last_updated": "2024-10-17",
+        "certification_date": "2024-10-17",
+        "status": "A",
+        "authorized_official_first_name": "ALEXIS",
+        "authorized_official_last_name": "STORONKIN",
+        "authorized_official_telephone_number": "9179711727",
+        "authorized_official_title_or_position": "CEO"
+      },
+      "taxonomies": [
+        {
+          "code": "324500000X",
+          "taxonomy_group": "",
+          "desc": "Substance Abuse Rehabilitation Facility",
+          "state": null,
+          "license": null,
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1688132620000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1688132620000",
+      "number": "1508543638",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "2409 E MITCHELL DR",
+          "city": "PHOENIX",
+          "state": "AZ",
+          "postal_code": "850167415",
+          "telephone_number": "480-695-4841"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "3502 N ROSE CIRCLE DR",
+          "city": "SCOTTSDALE",
+          "state": "AZ",
+          "postal_code": "852515458",
+          "telephone_number": "480-695-4841"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "organization_name": "1.21 GIGAWATTS",
+        "organizational_subpart": "NO",
+        "enumeration_date": "2023-06-30",
+        "last_updated": "2023-06-30",
+        "certification_date": "2023-06-30",
+        "status": "A",
+        "authorized_official_first_name": "JOSHUA",
+        "authorized_official_last_name": "CARLSON",
+        "authorized_official_telephone_number": "4806954841",
+        "authorized_official_title_or_position": "Owner"
+      },
+      "taxonomies": [
+        {
+          "code": "324500000X",
+          "taxonomy_group": "",
+          "desc": "Substance Abuse Rehabilitation Facility",
+          "state": null,
+          "license": null,
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1402415193000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1658439442000",
+      "number": "1053724716",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "8605 JANET AVE",
+          "city": "RIVERSIDE",
+          "state": "CA",
+          "postal_code": "925039212",
+          "telephone_number": "877-228-4679",
+          "fax_number": "951-602-6655"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "5953 GRAND AVE",
+          "city": "RIVERSIDE",
+          "state": "CA",
+          "postal_code": "925041369",
+          "telephone_number": "800-266-7044",
+          "fax_number": "951-784-7084"
+        }
+      ],
+      "practiceLocations": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "4175 BROCKTON AVE",
+          "city": "RIVERSIDE",
+          "state": "CA",
+          "postal_code": "925013442",
+          "telephone_number": "877-228-4679",
+          "fax_number": "951-602-6655"
+        }
+      ],
+      "basic": {
+        "organization_name": "10 ACRE RANCH",
+        "organizational_subpart": "NO",
+        "enumeration_date": "2014-06-10",
+        "last_updated": "2022-07-21",
+        "status": "A",
+        "authorized_official_first_name": "ISMAIL",
+        "authorized_official_last_name": "JADALLAH",
+        "authorized_official_telephone_number": "7148334826",
+        "authorized_official_title_or_position": "Administrator",
+        "authorized_official_name_prefix": "Mr."
+      },
+      "taxonomies": [
+        {
+          "code": "324500000X",
+          "taxonomy_group": "",
+          "desc": "Substance Abuse Rehabilitation Facility",
+          "state": "CA",
+          "license": null,
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1593549139000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1641345113000",
+      "number": "1457978942",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "4919 BERGENLINE AVE",
+          "city": "WEST NEW YORK",
+          "state": "NJ",
+          "postal_code": "070935510",
+          "telephone_number": "201-898-0317"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "4919 BERGENLINE AVE",
+          "city": "WEST NEW YORK",
+          "state": "NJ",
+          "postal_code": "070935510",
+          "telephone_number": "201-898-0317"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "organization_name": "100KIDS INC",
+        "organizational_subpart": "NO",
+        "enumeration_date": "2020-06-30",
+        "last_updated": "2022-01-04",
+        "certification_date": "2022-01-04",
+        "status": "A",
+        "authorized_official_first_name": "CHRISTINE",
+        "authorized_official_last_name": "BELL",
+        "authorized_official_telephone_number": "8628233736",
+        "authorized_official_title_or_position": "Board President"
+      },
+      "taxonomies": [
+        {
+          "code": "251B00000X",
+          "taxonomy_group": "",
+          "desc": "Case Management",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "252Y00000X",
+          "taxonomy_group": "",
+          "desc": "Early Intervention Provider Agency",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "261QM0801X",
+          "taxonomy_group": "",
+          "desc": "Clinic/Center, Mental Health (Including Community Mental Health Center)",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "261QM1300X",
+          "taxonomy_group": "",
+          "desc": "Clinic/Center, Multi-Specialty",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "3245S0500X",
+          "taxonomy_group": "",
+          "desc": "Substance Abuse Rehabilitation Facility, Substance Abuse Treatment, Children",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "251S00000X",
+          "taxonomy_group": "",
+          "desc": "Community/Behavioral Health",
+          "state": null,
+          "license": null,
+          "primary": true
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": []
+    },
+    {
+      "created_epoch": "1555682120000",
+      "enumeration_type": "NPI-2",
+      "last_updated_epoch": "1721163081000",
+      "number": "1114580677",
+      "addresses": [
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "LOCATION",
+          "address_type": "DOM",
+          "address_1": "3246 CAHUENGA BLVD W",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "postal_code": "900681302",
+          "telephone_number": "818-731-2738"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "address_purpose": "MAILING",
+          "address_type": "DOM",
+          "address_1": "11319 OVERLOOK TRL",
+          "city": "KAGEL CANYON",
+          "state": "CA",
+          "postal_code": "913426200",
+          "telephone_number": "818-731-2738"
+        }
+      ],
+      "practiceLocations": [],
+      "basic": {
+        "organization_name": "101 DANCE CENTER LLC",
+        "organizational_subpart": "NO",
+        "enumeration_date": "2019-04-19",
+        "last_updated": "2024-07-16",
+        "certification_date": "2024-07-16",
+        "status": "A",
+        "authorized_official_first_name": "JOSHUA",
+        "authorized_official_last_name": "ALOMIA",
+        "authorized_official_telephone_number": "3108696211",
+        "authorized_official_title_or_position": "COO"
+      },
+      "taxonomies": [
+        {
+          "code": "261QM0850X",
+          "taxonomy_group": "",
+          "desc": "Clinic/Center, Adult Mental Health",
+          "state": null,
+          "license": null,
+          "primary": true
+        },
+        {
+          "code": "261QR0405X",
+          "taxonomy_group": "",
+          "desc": "Clinic/Center, Rehabilitation, Substance Use Disorder",
+          "state": null,
+          "license": null,
+          "primary": false
+        },
+        {
+          "code": "324500000X",
+          "taxonomy_group": "",
+          "desc": "Substance Abuse Rehabilitation Facility",
+          "state": null,
+          "license": null,
+          "primary": false
+        }
+      ],
+      "identifiers": [],
+      "endpoints": [],
+      "other_names": [
+        {
+          "organization_name": "CASA BLANCA OUTPATIENT SERVICES",
+          "type": "Doing Business As",
+          "code": "3"
+        }
+      ]
+    }
+  ]
+}
