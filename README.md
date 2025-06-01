@@ -1,6 +1,6 @@
 # NPI Provider Ingestion Pipeline
 
-This project is an asynchronous provider ingestion pipeline designed to fetch, parse, and store healthcare provider data from the NPI Registry API. It is intended to seed a rehab app prototype system with up-to-date provider information, focusing on substance abuse and mental health services.
+This project is an asynchronous medical provider (Substance Abuse + Mental Health Facilities) ingestion pipeline designed to fetch, parse, and store healthcare provider data from the NPI Registry API. It is intended to seed a rehab app prototype system with up-to-date provider information, focusing on substance abuse and mental health services.
 
 ## Features
 
