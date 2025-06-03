@@ -7,3 +7,19 @@ api_return.json
 __pycache__/  
 
 taxonomy_func.py 
+
+
+cursorDirect/ 
+
+test_npi_sync_substance_mental.py 
+
+temp_dir_csv.py 
+
+provider_types.ipynb 
+
+filter_large_npi_csv.py 
+
+filtered_npi_providers.csv 
+
+npi_async_requests.py 
+
