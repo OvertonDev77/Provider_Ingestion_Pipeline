@@ -21,7 +21,7 @@ class NPIClient:
         if taxonomy_descriptions is None:
             taxonomy_descriptions = [
                 "Substance Abuse Rehabilitation Facility",
-                "Mental Health",
+                "Substance Abuse Treatment, Children",
             ]
         self.taxonomy_descriptions = taxonomy_descriptions
 
