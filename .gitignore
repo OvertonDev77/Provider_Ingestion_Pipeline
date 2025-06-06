@@ -23,4 +23,6 @@ filtered_npi_providers.csv
 
 npi_async_requests.py 
 
-final_filter.py 
+final_filter.py  
+
+npi_ingestion/table_operations.py

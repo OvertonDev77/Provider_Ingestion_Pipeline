@@ -14,15 +14,14 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies
-COPY requirements.txt .
-RUN pip install --upgrade pip && pip install -r requirements.txt
+COPY prod-requirements.txt .
+RUN pip install --upgrade pip && pip install -r prod-requirements.txt
 
 # Copy project
 COPY . .
 
-# Create and expose temp directory as a volume
+# Create temp directory (no VOLUME needed)
 RUN mkdir -p /tmp/nppes_data
-VOLUME ["/tmp/nppes_data"]
 
 # Expose port
 EXPOSE 8000
