@@ -2,7 +2,6 @@ import aiohttp
 import asyncio
 import time
 from typing import List
-from .models import Provider
 
 NPI_API_URL = "https://npiregistry.cms.hhs.gov/api/"
 
@@ -47,7 +46,7 @@ class NPIClient:
         print(f"Failed to fetch after {self.RETRY_LIMIT} retries.")
         return []
 
-    async def fetch_all_providers(self, start_time=None) -> List[Provider]:
+    async def fetch_all_providers(self, start_time=None) -> List:
         all_results = []
         if start_time is None:
             start_time = time.time()
@@ -55,7 +54,7 @@ class NPIClient:
             for desc in self.taxonomy_descriptions:
                 skip = 0
                 total_fetched = 0
-                for req_num in range(self.MAX_REQUESTS):
+                for _ in range(self.MAX_REQUESTS):
                     if time.time() - start_time > self.RUN_TIME_LIMIT:
                         print("Reached 4 hour run time limit. Pausing for 2 hours...")
                         await asyncio.sleep(self.WAIT_TIME)
@@ -74,7 +73,7 @@ class NPIClient:
                         break
                     await asyncio.sleep(self.RATE_LIMIT_DELAY)
         # Convert to Provider models
-        return [Provider.parse_obj(self._parse_npi_result(r)) for r in all_results]
+        return [self._parse_npi_result(r) for r in all_results]
 
     def _parse_npi_result(self, result):
         basic = result.get("basic", {})
