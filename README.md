@@ -1,95 +1,107 @@
-# NPI Provider Ingestion Pipeline
+# Rehab Provider Ingestion Pipeline
 
-This project is an asynchronous medical provider (Substance Abuse + Mental Health Facilities) ingestion pipeline designed to fetch, parse, and store healthcare provider data from the NPI Registry API. It is intended to seed a rehab app prototype system with up-to-date provider information, focusing on substance abuse and mental health services.
+This project ingests up-to-date rehab provider data into a Supabase/Postgres database for use in a rehab-finding application. It automates the download, parsing, and upsert of provider data from the NPPES (National Plan and Provider Enumeration System) registry, focusing on substance abuse and mental health facilities.
 
 ## Features
 
-- **Asynchronous API Requests**: Efficiently fetches provider data using aiohttp and asyncio.
-- **Robust Data Parsing**: Uses Pydantic models for data validation and transformation.
-- **Database Upsert**: Stores provider data in a Supabase/Postgres database, using upsert logic to avoid duplicates.
-- **Modular Architecture**: Clean separation of API, database, service, and configuration layers.
-- **Dockerized**: Easily runnable in any environment with Docker.
-- **FastAPI Endpoint**: Optionally trigger ingestion via an HTTP API.
+- **Automated NPPES Data Ingestion**: On startup, the FastAPI server downloads the latest NPPES provider file (monthly release) and processes it.
+- **Asynchronous API Fetching**: Optionally, fetches provider data from the NPI Registry API using asynchronous requests.
+- **Supabase/Postgres Integration**: Upserts provider data into a custom `NPIRehabs` table, avoiding duplicates.
+- **FastAPI Endpoints**:
+  - Startup triggers the NPPES file ingestion.
+  - Additional endpoint to run the async API-based ingestion.
+- **Configurable via `.env`**: All required API keys and settings are loaded from environment variables (see `.env.example`).
+- **Prompt Engineering Rules**: The `.cursor/rules/` directory contains `.mdc` files documenting prompt rules used in the project.
 
 ## Project Structure
 
 ```
 npi_ingestion/
-  models.py            # Pydantic Provider model
-  api_client.py        # NPIClient class (async, typed, rate-limited)
-  db.py                # SupabaseProviderRepo class (upsert logic)
-  ingestion_service.py # IngestionService class (workflow orchestration)
-  config.py            # Env/config loader
-  utils.py             # Logging utility
-main.py                # CLI entrypoint, uses the service
-server.py              # FastAPI server, triggers workflow
+  api_client.py        # Async NPI Registry API client
+  db.py                # Supabase/Postgres upsert logic
+  ingestion_service.py # Orchestrates API-based ingestion
+  config.py            # Loads environment/config
+  startup.py           # Handles NPPES file download and ingestion
+  utils.py             # Logging utilities
+main.py                # CLI entrypoint
+server.py              # FastAPI server (triggers workflows)
 Dockerfile             # Docker build file
+rehabs.make_your_own.sql # Example schema for custom table
+.cursor/
+  rules/
+    ...                # Prompt engineering rules (.mdc files)
 ```
 
-## Usage
+## Getting Started
 
 ### 1. Environment Setup
 
-- Copy your Supabase credentials into a `.env` file:
+- Copy `.env.example` to `.env` and fill in your Supabase credentials and any other required keys:
   ```
   SUPABASE_URL=your_supabase_url
   SUPABASE_KEY=your_supabase_key
   ```
 
-### 2. Run the Service
+### 2. Database Setup
 
-#### a. Using Docker (Recommended)
-
-- Build the Docker image:
-  ```sh
-  docker build -t npi-ingestion .
-  ```
-- Run the FastAPI server:
-  ```sh
-  docker run --rm -p 8000:8000 --env-file .env npi-ingestion uvicorn server:app --host 0.0.0.0 --port 8000
-  ```
-- Trigger the workflow via HTTP:
-  ```sh
-  curl -X POST http://localhost:8000/run-npi-workflow
+- Use the provided `rehabs.make_your_own.sql` to create the `NPIRehabs` table in your Supabase/Postgres instance:
+  ```sql
+  -- Example: psql -h <host> -U <user> -d <db> -f rehabs.make_your_own.sql
   ```
 
-#### b. Using Local venv Environment
+### 3. Running the Service
 
-- Activate your virtual environment:
-  ```sh
-  source venv/bin/activate  # On Linux/Mac
-  venv\Scripts\activate    # On Windows
-  ```
-- Install dependencies:
-  ```sh
-  pip install -r requirements.txt
-  ```
-- Run the pipeline directly:
-  ```sh
-  python main.py
-  ```
-- Or run the FastAPI server locally:
-  ```sh
-  uvicorn server:app --reload
-  ```
-- Then trigger the workflow via HTTP:
+#### a. With Docker (Recommended)
+
+```sh
+docker build -t rehab-ingestion .
+docker run --rm -p 8000:8000 --env-file .env rehab-ingestion
+```
+
+- The FastAPI server will start, automatically triggering the NPPES file ingestion on startup.
+
+### 4. API Usage
+
+- **Startup Ingestion**: On server start, the latest NPPES file is downloaded and ingested.
+- **Async API Ingestion**: Trigger the async NPI Registry API workflow:
   ```sh
   curl -X POST http://localhost:8000/run-npi-workflow
   ```
 
 ## How It Works
 
-- The pipeline fetches provider data from the NPI Registry API, focusing on substance abuse and mental health taxonomy descriptions.
-- Data is parsed and validated using Pydantic models.
-- Providers are upserted into the `NPIRehabs` table in your Supabase/Postgres database.
-- The workflow can be triggered via CLI or HTTP (FastAPI).
+- **NPPES File Ingestion**: Downloads the latest monthly NPPES provider file, filters for relevant taxonomy codes (substance abuse/mental health), deduplicates, and upserts into Supabase.
+- **Async API Ingestion**: Optionally fetches providers from the NPI Registry API for more up-to-date or targeted data.
+- **Database**: All providers are stored in the `NPIRehabs` table (see `rehabs.make_your_own.sql` for schema).
+
+## Prompt Engineering Rules
+
+- The `.cursor/rules/` directory contains `.mdc` files documenting the types of prompt rules used in this project. These are useful for understanding or extending the prompt engineering logic.
 
 ## For Developers
 
-- All code is modular and typed.
-- Logging is provided for observability.
+- Modular, typed Python code.
+- Logging for observability.
 - Easily extensible for new taxonomies, endpoints, or database targets.
 
 ## License
 
 MIT
+
+---
+
+## Running Locally (venv, non-Docker)
+
+```sh
+python -m venv venv
+source venv/bin/activate  # On Linux/Mac
+venv\Scripts\activate     # On Windows
+pip install -r prod-requirements.txt
+uvicorn server:app --reload
+```
+
+- The server will start and trigger the NPPES ingestion.
+- You can also trigger the async API workflow with:
+  ```sh
+  curl -X POST http://localhost:8000/run-npi-workflow
+  ```
