@@ -85,3 +85,9 @@ db.sqlite3-journal
 
 
 
+requirements.txt 
+
+data/ 
+
+npi_ingestion/table_operations.py
+

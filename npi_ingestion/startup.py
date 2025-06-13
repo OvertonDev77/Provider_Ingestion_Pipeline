@@ -5,7 +5,7 @@ import requests
 import pandas as pd
 import shutil
 from npi_ingestion.config import get_supabase_client
-from npi_ingestion.db import SupabaseProviderRepo
+from npi_ingestion.db import SupabaseProviderRepo 
 
 NPPES_ZIP_URL = os.environ.get("NPPES_ZIP_URL", "https://download.cms.gov/nppes/NPPES_Data_Dissemination_May_2025_V2.zip")
 TEMP_DIR = "/tmp/nppes_data"
